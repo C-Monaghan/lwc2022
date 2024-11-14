@@ -1,6 +1,10 @@
-url: ~
+url: https://github.com/C-Monaghan/lwc2022/
 template:
   bootstrap: 5
   light-switch: true
   theme: gruvbox-light
   theme-dark: gruvbox-dark
+
+navbar:
+  structure:
+    left: [intro, articles, reference]
