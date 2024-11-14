@@ -1,5 +1,6 @@
 pandoc: 3.1.11
 pkgdown: 2.1.1
 pkgdown_sha: ~
-articles: {}
-last_built: 2024-11-14T11:10Z
+articles:
+  lwc2022: lwc2022.html
+last_built: 2024-11-14T11:37Z
