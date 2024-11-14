@@ -1,18 +1,18 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/LICENSE-text.html</loc></url>
-<url><loc>/articles/example_data.html</loc></url>
-<url><loc>/articles/index.html</loc></url>
-<url><loc>/articles/lwc2022.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/classify.html</loc></url>
-<url><loc>/reference/cog_data.html</loc></url>
-<url><loc>/reference/cog_data_score.html</loc></url>
-<url><loc>/reference/extract.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/score.html</loc></url>
-<url><loc>/reference/score_recall.html</loc></url>
-<url><loc>/reference/score_subtraction.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/404.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/LICENSE-text.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/articles/example_data.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/articles/index.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/articles/lwc2022.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/authors.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/index.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/classify.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/cog_data.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/cog_data_score.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/extract.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/index.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/score.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/score_recall.html</loc></url>
+<url><loc>https://github.com/C-Monaghan/lwc2022/reference/score_subtraction.html</loc></url>
 </urlset>
 
