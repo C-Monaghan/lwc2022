@@ -1,3 +1,6 @@
 ^lwc2022\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^_pkgdown\.yml$
+^pkgdown$
+^\.github$

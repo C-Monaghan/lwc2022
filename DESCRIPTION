@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Cormac", "Monaghan", , "cormacmonaghan@protonmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9012-3060"))
-URL: https://github.com/C-Monaghan/lwc2022, https://c-monaghan.github.io/lwc022/
+URL: https://github.com/C-Monaghan/lwc2022, https://c-monaghan.github.io/lwc022/, https://c-monaghan.github.io/lwc2022/
 BugReports: https://github.com/C-Monaghan/lwc2022/issues
 Language: en-US
 Description: Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study cognition data. 
