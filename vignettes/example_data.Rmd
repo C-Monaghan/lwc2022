@@ -1,5 +1,5 @@
 ---
-title: "Example data: cog_data"
+title: "Example data"
 author: "Cormac Monaghan"
 date: "`r Sys.Date()`"
 output: 
@@ -7,7 +7,7 @@ output:
   toc: true
 vignette: >
   %\VignetteEncoding{UTF-8}
-  %\VignetteIndexEntry{Example data: cog_data}
+  %\VignetteIndexEntry{Example data}
   %\VignetteEngine{knitr::rmarkdown}
 editor_options: 
   chunk_output_type: console
