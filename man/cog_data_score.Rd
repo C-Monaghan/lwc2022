@@ -5,7 +5,7 @@
 \alias{cog_data_score}
 \title{Scored Cognition Data}
 \format{
-A dataframe with 100 rows and 6 variables:
+A dataframe with 10 rows and 6 variables:
 \describe{
 \item{HHID}{Household identifier, a unique 6-digit integer.}
 \item{PN}{Person number, a unique 1- or 2-digit integer within each household.}

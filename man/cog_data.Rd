@@ -5,7 +5,7 @@
 \alias{cog_data}
 \title{Cognition Data}
 \format{
-A dataframe with 100 rows and 19 variables:
+A dataframe with 10 rows and 29 variables:
 \describe{
 \item{HHID}{Household identifier, a unique 6-digit integer.}
 \item{PN}{Person number, a unique 1- or 2-digit integer within each household.}
@@ -15,12 +15,22 @@ A dataframe with 100 rows and 19 variables:
 \item{SD182M3}{Immediate word recall test score for the third word.}
 \item{SD182M4}{Immediate word recall test score for the fourth word.}
 \item{SD182M5}{Immediate word recall test score for the fifth word.}
+\item{SD182M6}{Immediate word recall test score for the sixth word.}
+\item{SD182M7}{Immediate word recall test score for the seventh word.}
+\item{SD182M8}{Immediate word recall test score for the eight word.}
+\item{SD182M9}{Immediate word recall test score for the ninth word.}
+\item{SD182M10}{Immediate word recall test score for the tenth word.}
 
 \item{SD183M1}{Delayed word recall test score for the first word.}
 \item{SD183M2}{Delayed word recall test score for the second word.}
 \item{SD183M3}{Delayed word recall test score for the third word.}
 \item{SD183M4}{Delayed word recall test score for the fourth word.}
 \item{SD183M5}{Delayed word recall test score for the fifth word.}
+\item{SD183M6}{Delayed word recall test score for the sixth word.}
+\item{SD183M7}{Delayed word recall test score for the seventh word.}
+\item{SD183M8}{Delayed word recall test score for the eight word.}
+\item{SD183M9}{Delayed word recall test score for the ninth word.}
+\item{SD183M10}{Delayed word recall test score for the tenth word.}
 
 \item{SD142}{Serial subtraction, result of subtracting 7 from 100.}
 \item{SD143}{Serial subtraction, result of subtracting 7 from the previous number.}
