@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Langa-Weir Classification of Cognitive Function for 2022 HRS Data • lwc2022</title>
-<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
 
     <a class="navbar-brand me-2" href="index.html">lwc2022</a>
 
@@ -39,6 +39,14 @@
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/C-Monaghan/lwc2022/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch">
+<li><button class="dropdown-item" data-bs-theme-value="light"><span class="fa fa-sun"></span> Light</button></li>
+    <li><button class="dropdown-item" data-bs-theme-value="dark"><span class="fa fa-moon"></span> Dark</button></li>
+    <li><button class="dropdown-item" data-bs-theme-value="auto"><span class="fa fa-adjust"></span> Auto</button></li>
+  </ul>
+</li>
       </ul>
 </div>
 
@@ -46,8 +54,21 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study cognition data.
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="lwc2022">lwc2022<a class="anchor" aria-label="anchor" href="#lwc2022"></a>
+</h1></div>
+<p><code>lwc2022</code> is a package designed to generate the Langa-Weir classification of cognitive function for the 2022 <a href="https://hrsdata.isr.umich.edu/" class="external-link">Health and Retirement Study (HRS)</a> cognition data. For previous waves of HRS data (1995 - 2020) there is a <a href="https://hrsdata.isr.umich.edu/data-products/langa-weir-classification-cognitive-function-1995-2020" class="external-link">researcher contributed dataset</a> of dementia classifications. However, with the recent release of the 2022 HRS data, these classifications have yet to be updated. As such, the <code>lwc2022</code> package aims to provide tools that allow researchers to apply the same classification methodology to the 2022 cognition data.</p>
+<p>To examine the full vignette check out: <a href="https://c-monaghan.github.io/lwc2022/articles/lwc2022.html" class="external-link">lwc2022</a></p>
+</div>
+<div class="section level1">
+<h1 id="installing-the-lwc2022-package">Installing the lwc2022 package<a class="anchor" aria-label="anchor" href="#installing-the-lwc2022-package"></a>
+</h1>
+<p>To install from Github</p>
+<p><code>{r} # install.packages("devtools") devtools::install_github("C-Monaghan/lwc2022")</code></p>
+<p>Next, load the package with</p>
+<p><code>{r} library(lwc2022)</code></p>
+</div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -76,7 +97,9 @@ Generates the Langa-Weir classification of cognitive function for the 2022 Healt
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Cormac Monaghan <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-9012-3060" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Cormac Monaghan <br><small class="roles"> Copyright holder, author, maintainer </small> <a href="https://orcid.org/0000-0001-9012-3060" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Rafael de Andrade Moral <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-0875-3563" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Joanna McHugh Power <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-7387-3107" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -87,7 +110,7 @@ Generates the Langa-Weir classification of cognitive function for the 2022 Healt
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Cormac Monaghan.</p>
+  <p>Developed by Cormac Monaghan, Rafael de Andrade Moral, Joanna McHugh Power.</p>
 </div>
 
 <div class="pkgdown-footer-right">
