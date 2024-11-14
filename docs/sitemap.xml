@@ -1,0 +1,15 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/reference/classify.html</loc></url>
+<url><loc>/reference/cog_data.html</loc></url>
+<url><loc>/reference/cog_data_score.html</loc></url>
+<url><loc>/reference/extract.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/score.html</loc></url>
+<url><loc>/reference/score_recall.html</loc></url>
+<url><loc>/reference/score_subtraction.html</loc></url>
+</urlset>
+
