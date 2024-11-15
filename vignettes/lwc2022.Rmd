@@ -73,6 +73,9 @@ library(lwc2022)
 # Load the example dataset
 data(cog_data)
 
+# Alternatively load the real HRS 2022 cognition data
+# cog_data <- haven::read_sav(here::here("../path_to_file.sav"))
+
 # Extract the relevant cognitive test variables
 extracted_data <- extract(cog_data)
 
