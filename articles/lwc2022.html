@@ -196,6 +196,9 @@ used to classify individuals into cognitive function groups:</p>
 <span><span class="co"># Load the example dataset</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">cog_data</span><span class="op">)</span></span>
 <span></span>
+<span><span class="co"># Alternatively load the real HRS 2022 cognition data</span></span>
+<span><span class="co"># cog_data &lt;- haven::read_sav(here::here("../path_to_file.sav"))</span></span>
+<span></span>
 <span><span class="co"># Extract the relevant cognitive test variables</span></span>
 <span><span class="va">extracted_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/extract.html">extract</a></span><span class="op">(</span><span class="va">cog_data</span><span class="op">)</span></span>
 <span></span>
