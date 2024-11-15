@@ -5,7 +5,7 @@
 \alias{cog_data}
 \title{Cognition Data}
 \format{
-A dataframe with 10 rows and 29 variables:
+A dataframe with 10 rows and 35 variables:
 \describe{
 \item{HHID}{Household identifier, a unique 6-digit integer.}
 \item{PN}{Person number, a unique 1- or 2-digit integer within each household.}
@@ -40,6 +40,13 @@ A dataframe with 10 rows and 29 variables:
 
 \item{SD124}{Backwards counting test, success on the first attempt (1 = success, 0 = fail).}
 \item{SD129}{Backwards counting test, success on the second attempt (1 = success, 0 = fail).}
+
+\item{SD237WA}{Mouse clicking test: accuracy result (first attemp)}
+\item{SD237WC}{Mouse clicking test: total click count (first attemp)}
+\item{SD237WT}{Mouse clicking test: total time spent (in seconds; first attempt)}
+\item{SD238WA}{Mouse clicking test: accuracy result (second attemp)}
+\item{SD238WC}{Mouse clicking test: total click count (second attemp)}
+\item{SD238WT}{Mouse clicking test: total time spent (in seconds; second attempt)}
 }
 }
 \usage{
@@ -47,8 +54,8 @@ cog_data
 }
 \description{
 A simulated dataset with cognition test scores, following the same methodology as the Health and Retirement Study (HRS).
-The dataset includes immediate word recall, delayed word recall, serial subtraction, and backwards counting tasks, with scores representing
-cognitive performance on these tests.
+The dataset includes immediate word recall, delayed word recall, serial subtraction, backwards counting tasks, and mouse click clicking
+with scores representing cognitive performance on these tests.
 }
 \examples{
 # Load the data

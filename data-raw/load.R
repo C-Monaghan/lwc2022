@@ -8,7 +8,8 @@ generate_example_data <- function(n = 100) {
     HHID = sample(100000:999999, n, replace = TRUE),   # Random household ID
     PN = sample(1:99, n, replace = TRUE),              # Random person number
 
-    # Immediate word recall (5 items)
+    # THESE ARE THE VARIABLES USED IN THE LW CLASSIFICATIONS
+    # Immediate word recall (10 items)
     SD182M1 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M2 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M3 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
@@ -20,7 +21,7 @@ generate_example_data <- function(n = 100) {
     SD182M9 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M10 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
 
-    # Delayed word recall (5 items)
+    # Delayed word recall (10 items)
     SD183M1 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD183M2 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD183M3 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
@@ -41,7 +42,16 @@ generate_example_data <- function(n = 100) {
 
     # Backwards counting
     SD124 = sample(0:1, n, replace = TRUE),  # Success on first try (1 = success, 0 = fail)
-    SD129 = sample(0:1, n, replace = TRUE)   # Success on second try (1 = success, 0 = fail)
+    SD129 = sample(0:1, n, replace = TRUE),  # Success on second try (1 = success, 0 = fail)
+
+    # RANDOM VARIABLES NOT USED IN LW CLASSIFICATIONS
+    # Speed Test (Mouse clicking)
+    SD237WA = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD237WC = sample(c(1:20), n, replace = TRUE),
+    SD237WT = sample(c(1:60), n, replace = TRUE),
+    SD238WA = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD238WC = sample(c(1:20), n, replace = TRUE),
+    SD238WT = sample(c(1:60), n, replace = TRUE)
   )
 }
 
@@ -49,7 +59,9 @@ generate_example_data <- function(n = 100) {
 cog_data <- generate_example_data(n = 10)
 
 # Scoring dataset
-cog_data_score <- lwc2022::score(cog_data)
+cog_data_score <- cog_data |>
+  lwc2022::extract() |>
+  lwc2022::score()
 
 # Use these as example dataset
 usethis::use_data(cog_data, overwrite = TRUE)

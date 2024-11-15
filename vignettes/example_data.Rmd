@@ -29,7 +29,7 @@ The simulated dataset contains 10 observations and follows the structure expecte
 
 ## Structure of the simulated data
 
-The `cog_data` dataset contains 29 variable. A summary of its structure is presented below:
+The `cog_data` dataset contains 35 variable. A summary of its structure is presented below:
 
 ```{r}
 # Load the package
@@ -52,6 +52,7 @@ The dataset contains variables for individual identifiers, cognition-related tas
 - `SD183M01-SD183M10`: Responses for the Delayed Word Recall task.
 - `SD142-SD146`: Responses for the Serial Subtraction task, where participants are asked to subtract 7 from 100 iteratively five times.
 - `SD124` and `SD129`: Responses for the Backwards Counting task, where participants count backwards from 20. `SD124` represents the first attempt, and `SD129` represents the second attempt.
+- `SD237WA-SD237WT` and `SD238WA-SD238WT`: Responses to a mouse clicking test measuring accuracy, click counts, and click time.
 
 ## Generating the data
 
@@ -59,13 +60,14 @@ The `generate_example_data()` function generates a dataset of size $n = 10$, pro
 
 ```{r}
 # Simulated dataset
-generate_example_data <- function(n = 10) {
+generate_example_data <- function(n = 100) {
   data.frame(
     # Identifiers
     HHID = sample(100000:999999, n, replace = TRUE),   # Random household ID
     PN = sample(1:99, n, replace = TRUE),              # Random person number
 
-    # Immediate word recall (5 items)
+    # THESE ARE THE VARIABLES USED IN THE LW CLASSIFICATIONS
+    # Immediate word recall (10 items)
     SD182M1 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M2 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M3 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
@@ -77,7 +79,7 @@ generate_example_data <- function(n = 10) {
     SD182M9 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD182M10 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
 
-    # Delayed word recall (5 items)
+    # Delayed word recall (10 items)
     SD183M1 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD183M2 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
     SD183M3 = sample(c(1:40, 51:67, 96, 98, 99), n, replace = TRUE),
@@ -98,7 +100,16 @@ generate_example_data <- function(n = 10) {
 
     # Backwards counting
     SD124 = sample(0:1, n, replace = TRUE),  # Success on first try (1 = success, 0 = fail)
-    SD129 = sample(0:1, n, replace = TRUE)   # Success on second try (1 = success, 0 = fail)
+    SD129 = sample(0:1, n, replace = TRUE),  # Success on second try (1 = success, 0 = fail)
+
+    # RANDOM VARIABLES NOT USED IN LW CLASSIFICATIONS
+    # Speed Test (Mouse clicking)
+    SD237WA = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD237WC = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD237WT = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD238WA = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD238WC = sample(c(0, 1, -8, -9), n, replace = TRUE),
+    SD238WT = sample(c(0, 1, -8, -9), n, replace = TRUE)
   )
 }
 ```
@@ -117,6 +128,9 @@ The function returns a dataframe with $n$ rows and the following columns:
 - **SD183M1 - SD183M10**: Responses for Delayed Word Recall, with values similarly simulated as above.
 - **SD142 - SD146**: Values from a serial subtraction task, representing five rounds of subtracting 7 from 100 (with random variance for errors).
 - **SD124** and **SD129**: Binary responses representing success (1) or failure (0) on two attempts at backwards counting.
+- **SD237WA** and **SD238WA**: Accuracy responses for a mouse clicking test. Responses are represented as success (1), failure (0), non participation due to technical reasons (-6) or refusal to participate (-8). **SD237WA** indicates the first attempt while **SD238WA** indicates the second attempt.
+- **SD237WC** and **SD238WC**: Responses representing the total number of clicks for a mouse clicking test. **SD237WC** indicates the first attempt while **SD238WC** indicates the second attempt.
+- **SD237WT** and **SD238WT**: Responses representing the total amount of time (in seconds) spent on a mouse clicking test. **SD237WT** indicates the time for the first attempt while **SD238WC** indicates the time for the second attempt.
 
 ## Example
 

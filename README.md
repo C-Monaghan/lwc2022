@@ -4,7 +4,7 @@
 
 To examine the full vignette check out: [lwc2022](https://c-monaghan.github.io/lwc2022/articles/lwc2022.html)
 
-# Installing the lwc2022 package
+## Installing the package
 
 To install from Github
 
