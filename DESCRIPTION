@@ -1,6 +1,6 @@
 Package: lwc2022
 Title: Langa-Weir Classification of Cognitive Function for 2022 HRS Data
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Cormac", "Monaghan", , "cormacmonaghan@protonmail.com", role = c("cph", "aut", "cre"),
            comment = c(ORCID = "0000-0001-9012-3060")),
