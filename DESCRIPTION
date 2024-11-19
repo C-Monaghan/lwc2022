@@ -11,7 +11,15 @@ Authors@R: c(
 URL: https://github.com/C-Monaghan/lwc2022, https://c-monaghan.github.io/lwc2022/
 BugReports: https://github.com/C-Monaghan/lwc2022/issues
 Language: en-US
-Description: Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study cognition data. 
+Description: Generates the Langa-Weir classification of cognitive function for 
+    the 2022 Health and Retirement Study (HRS) cognition data. It is 
+    particularly useful for researchers studying cognitive aging who wish to 
+    work with the most recent release of HRS data. The package provides 
+    user-friendly functions for data preprocessing, scoring, and classification
+    allowing users to easily apply the Langa-Weir classification system. 
+    For details regarding the;
+    HRS <https://hrsdata.isr.umich.edu/> and
+    Langa-Weir classifications <https://hrsdata.isr.umich.edu/data-products/langa-weir-classification-cognitive-function-1995-2020>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
