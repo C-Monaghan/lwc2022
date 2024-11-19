@@ -2,7 +2,7 @@
 set.seed(123)
 
 # Simulated dataset
-generate_example_data <- function(n = 100) {
+generate_example_data <- function(n = 10) {
   data.frame(
     # Identifiers
     HHID = sample(100000:999999, n, replace = TRUE),   # Random household ID
@@ -56,7 +56,7 @@ generate_example_data <- function(n = 100) {
 }
 
 # Generate a dataset of 10 observations
-cog_data <- generate_example_data(n = 10)
+cog_data <- generate_example_data()
 
 # Scoring dataset
 cog_data_score <- cog_data |>

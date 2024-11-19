@@ -60,7 +60,7 @@ The `generate_example_data()` function generates a dataset of size $n = 10$, pro
 
 ```{r}
 # Simulated dataset
-generate_example_data <- function(n = 100) {
+generate_example_data <- function(n = 10) {
   data.frame(
     # Identifiers
     HHID = sample(100000:999999, n, replace = TRUE),   # Random household ID
