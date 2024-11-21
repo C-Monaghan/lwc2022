@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Langa-Weir Classification of Cognitive Function for 2022 HRS Data">
-<meta name="description" content="Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study cognition data.">
-<meta property="og:description" content="Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study cognition data.">
+<meta name="description" content="Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study (HRS) cognition data. It is particularly useful for researchers studying cognitive aging who wish to work with the most recent release of HRS data. The package provides user-friendly functions for data preprocessing, scoring, and classification allowing users to easily apply the Langa-Weir classification system. For details regarding the; HRS &lt;https://hrsdata.isr.umich.edu/&gt; and Langa-Weir classifications &lt;https://hrsdata.isr.umich.edu/data-products/langa-weir-classification-cognitive-function-1995-2020&gt;.">
+<meta property="og:description" content="Generates the Langa-Weir classification of cognitive function for the 2022 Health and Retirement Study (HRS) cognition data. It is particularly useful for researchers studying cognitive aging who wish to work with the most recent release of HRS data. The package provides user-friendly functions for data preprocessing, scoring, and classification allowing users to easily apply the Langa-Weir classification system. For details regarding the; HRS &lt;https://hrsdata.isr.umich.edu/&gt; and Langa-Weir classifications &lt;https://hrsdata.isr.umich.edu/data-products/langa-weir-classification-cognitive-function-1995-2020&gt;.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">lwc2022</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,8 +68,10 @@
 <div class="section level2">
 <h2 id="installing-the-package">Installing the package<a class="anchor" aria-label="anchor" href="#installing-the-package"></a>
 </h2>
-<p>To install from Github</p>
-<p><code>{r} # install.packages("devtools") devtools::install_github("C-Monaghan/lwc2022")</code></p>
+<p>To install from CRAN</p>
+<p><code>{r} install.packages("lwc2022")</code></p>
+<p>Alternatively, to install from Github</p>
+<p><code>{r} devtools::install_github("C-Monaghan/lwc2022")</code></p>
 <p>Next, load the package with</p>
 <p><code>{r} library(lwc2022)</code></p>
 </div>
@@ -77,6 +79,7 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
+<li><a href="https://cloud.r-project.org/package=lwc2022" class="external-link">View on CRAN</a></li>
 <li><a href="https://github.com/C-Monaghan/lwc2022/">Browse source code</a></li>
 <li><a href="https://github.com/C-Monaghan/lwc2022/issues">Report a bug</a></li>
 </ul>

@@ -6,10 +6,15 @@ To examine the full vignette check out: [lwc2022](https://c-monaghan.github.io/l
 
 ## Installing the package
 
-To install from Github
+To install from CRAN
 
 ```{r}
-# install.packages("devtools")
+install.packages("lwc2022")
+```
+
+Alternatively, to install from Github
+
+```{r}
 devtools::install_github("C-Monaghan/lwc2022")
 ```
 

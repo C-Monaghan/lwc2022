@@ -64,7 +64,12 @@ This package offers several key functions to facilitate the generation of the La
 
 # Example Workflow
 ```{r}
-# Installing package
+# Installing package -----------------------------------------------------------
+# 
+# Installing from CRAN ---------------------------------------------------------
+# install.packages("lwc2022")
+# 
+# Installing from GitHub -------------------------------------------------------
 # devtools::install_github("C-Monaghan/lwc2022")
 
 # Loading package
